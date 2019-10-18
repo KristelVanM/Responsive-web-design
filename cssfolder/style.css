@@ -22,19 +22,43 @@ div {
 #large {
     font-size: 3em;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 300px) {
     html {
         background-color: coral;
     }
+    #medium {
+        visibility: hidden;
+    }
+    #large {
+        visibility: hidden;
+    }
 }
-@media (min-width: 601px) {
+
+@media (min-width: 300px) {
     html {
         background-color: rgb(125, 192, 125);
     }
+    #small {
+        visibility: hidden;
+    }
+    #large {
+        visibility: hidden;
+    }
 }
-@media (min-width: 1100px) {
+
+@media (min-width: 768px) {
    html {
         background-color: #3eaee2;
     }
-
+    #small {
+        visibility: hidden;
+    }
+    #medium {
+        visibility: hidden;
+    }
+    #large {
+        visibility: visible;
+    }
 }
+
